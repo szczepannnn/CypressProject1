@@ -27,9 +27,9 @@ jobs:
     - run: npm install react-scripts --save 
     - run: npm ci
     - run: npm run build --if-present
-    - run: npm run start
+
     - name: Run Cypress Test
-      uses: cypress-io/github-action@v4
+      uses: cypress-io/github-action@v5.1.0
       with:
         command: npx cypress run
         browser: chrome
