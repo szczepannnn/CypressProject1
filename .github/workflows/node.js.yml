@@ -31,6 +31,7 @@ jobs:
   cypress-run:
     name: Cypress tests
     needs: build
+    runs-on: ubuntu-latest
     
     steps:
       - name: Checkout
